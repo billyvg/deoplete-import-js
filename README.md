@@ -1,6 +1,10 @@
 # deoplete-import-js
 
-deoplete source for [import-js](https://github.com/Galooshi/import-js)
+A deoplete source for [import-js](https://github.com/Galooshi/import-js)
+
+Autocompletes es6 modules and `import` statements for corresponding module
+
+![example](https://raw.githubusercontent.com/billyvg/deoplete-import-js/master/example.gif)
 
 ## Installation
 
