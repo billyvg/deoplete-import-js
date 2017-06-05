@@ -2,7 +2,8 @@
 
 A deoplete source for [import-js](https://github.com/Galooshi/import-js)
 
-Autocompletes es6 modules and `import` statements for corresponding module
+Autocompletes js modules and auto-adds import statements for corresponding module Edit
+Add topics
 
 ![example](https://raw.githubusercontent.com/billyvg/deoplete-import-js/master/example.gif)
 
