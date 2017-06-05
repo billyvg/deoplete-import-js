@@ -34,8 +34,10 @@ class Completer(object):
         self.__completion_pattern = re.compile('\w*$')
 
     def get_bin(self):
-        return 'importjs'
-        return self.__vim.vars['deoplete_import_js#bin']
+        try:
+            return self.__vim.vars.get('deoplete_import_js#bin')
+        except:
+            return 'importjs'
 
     def determine_completion_position(self, context):
         result = self.__completion_pattern.search(context['input'])
