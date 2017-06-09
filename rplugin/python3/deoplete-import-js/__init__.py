@@ -15,7 +15,7 @@ class ImportJsHost(object):
         """
         return self.vim.current.buffer.name
 
-    @neovim.autocmd('CompleteDone', pattern='*.js,*.jsx', eval='expand("<amatch>")', sync=True)
+    @neovim.autocmd('CompleteDone', pattern='*.js,*.jsx', eval='expand("<amatch>")', sync=False)
     def importWord(self, afile):
         completed_item = self.vim.eval('v:completed_item')
         if completed_item:
